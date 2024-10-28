@@ -1,0 +1,42 @@
+.about {
+  background-color: $color-cadet-blue;
+  color: $color-bright-gray;
+
+  // &--active {
+   
+  // }
+}
+
+// .about__wrapper {
+  
+// }
+
+.about__title {
+  @extend %title-100;
+
+  margin: auto;
+  max-width: 107.4rem;
+  text-align: center;
+}
+
+.about__footer {
+  
+}
+
+.about__footer__copyright {
+
+}
+
+.about__footer__credits {
+  // a {
+    
+
+  //   &:first-child {
+      
+  //   }
+
+  //   &:last-child {
+      
+  //   }
+  // }
+}
