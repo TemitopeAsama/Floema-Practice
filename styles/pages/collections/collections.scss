@@ -20,6 +20,8 @@
 }
 
 .collections__titles {
+  @extend %vertical-titles;
+  
   position: absolute;
   left: 50%;
   top: 50%;
@@ -33,19 +35,19 @@
 // }
 
 .collections__titles__label {
-  @extend %description-12;
+  @extend %vertical-titles__label;
 
   text-transform: uppercase;
   text-align: center;
   transform: rotate(90deg);
 }
 
-// .collections__titles__label__text {
-  
-// }
+.collections__titles__label__text {
+  @extend %vertical-titles__label__text;
+}
 
 .collections__titles__title {
-  @extend %title-200;
+  @extend %vertical-titles__title;
   padding-top: 2rem;
 
   // .collections__titles__item:nth-child(1) & {
@@ -65,9 +67,9 @@
   // }
 }
 
-// .collections__titles__title__text {
-  
-// }
+.collections__titles__title__text {
+  @extend %vertical-titles__title__text;
+}
 
 .collections__gallery {
   @extend %cover;

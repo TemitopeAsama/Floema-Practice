@@ -20,10 +20,16 @@
 
 @import './layout/navigation';
 
+@import './shared/descriptions';
+@import './shared/links';
+@import './shared/pages';
+@import './shared/titles';
+@import './shared/vertical-titles';
+
 @import './pages/about/about';
 @import './pages/about/content';
 @import './pages/about/gallery';
-// @import './pages/about/highlights';
+@import './pages/about/highlights';
 
 @import './pages/collections/collections';
 
