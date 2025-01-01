@@ -30,8 +30,8 @@ block content
 
             p.collections__article__description!=collection.data.description.replace(/\n/g, '<br>')
 
-      //- .collections__mobile
-      //-   each collection, index in collections
-      //-     .collections__mobile__item
-      //-       .collections__mobile__item__label!=`${home.data.collection}<br>${Numbers(index)}`
-      //-       .collections__mobile__item__title=collection.data.title
+      .collections__mobile
+        each collection, index in collections
+          .collections__mobile__item
+            .collections__mobile__item__label!=`${home.data.collection}<br>${Numbers(index)}`
+            .collections__mobile__item__title=collection.data.title

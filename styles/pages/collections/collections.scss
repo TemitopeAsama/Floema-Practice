@@ -28,6 +28,10 @@
   transform: translate(-50%, -50%) rotate(-90deg);
   display: flex;
   align-items: center;
+
+  @include media('<phone') {
+    display: none;
+  }
 }
 
 // .collections__titles__wrapper {
@@ -112,6 +116,10 @@
   @extend %cover;
   position: absolute;
 
+  @include media('<phone') {
+    display: none;
+  }
+
 }
 
 .collections__article {
@@ -177,24 +185,39 @@
   // }
 }
 
-// .collections__mobile {
-  
+.collections__mobile {
+  bottom: 5rem;
+  display: none;
+  position: absolute;
 
+  @include media('<phone') {
+    display: flex;
+  }
+}
 
-// }
+.collections__mobile__item {
+  padding-left: 5rem;
+  width: 100vw;
+}
 
-// .collections__mobile__item {
-  
-// }
+.collections__mobile__item__label {
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
 
-// .collections__mobile__item__label {
+.collections__mobile__item__title {
+  font-family: $font-george-x;
+  font-size: 12rem;
+}
 
-// }
+.collections__button {
+  height: 63.1rem;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 44.7rem;
+}
 
-// .collections__mobile__item__title {
-  
-// }
-
-// .collections__button {
-  
-// }

@@ -1,20 +1,19 @@
 .home {
   @extend %center;
-  @extend %cover;
+  // @extend %page;
 
-  background-color: $color-contessa;
-  color: $color-quarter-spanish-white;
+  // background: $color-contessa;
+  // color: $color-quarter-spanish-white;
+  // overflow: hidden;
   text-align: center;
 
-  // &--active {
-    
-  // }
-
-  
+  &--active {
+    @extend %page--active;
+  }
 }
 
 .home__wrapper {
-  // @extend %cover;
+  @extend %cover;
 
   &:before,
   &:after {
@@ -58,33 +57,57 @@
 }
 
 .home__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  left: 50%;
+  padding: 0 2.5rem;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  width: 100%;
+  visibility: hidden;
 
-
-
+  @include media('<=phone') {
+    padding: 0 1.5rem;
+  }
 }
 
 .home__gallery__media {
-  position: absolute;
+  padding: 2.5rem;
+  width: 20%;
+
   &--2 {
-    
+    transform: translateY(10rem);
   }
 
   &--3 {
-    
+    transform: translateY(30rem);
   }
 
   &--4 {
-    
+    transform: translateY(20rem);
   }
 
   &--5 {
-    
+    transform: translateY(40rem);
   }
 
+  @include media('<=phone') {
+    padding: 1.5rem;
+    width: 50%;
+
+    &--2,
+    &--3,
+    &--4,
+    &--5 {
+      transform: translateY(0);
+    }
+  }
 }
 
 .home__gallery__media__image {
-  
+  display: block;
+  width: 100%;
 }
 
 .home__link {
@@ -110,7 +133,11 @@
     vertical-align: middle;
   }
 
-
+  @include media('<phone') {
+    bottom: 7.5rem;
+    height: 13.7rem;
+    width: 55rem;
+  }
 }
 
 .home__link__icon {

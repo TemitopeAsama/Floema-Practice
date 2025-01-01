@@ -1,8 +1,8 @@
 .about {
-  @extend %page;
+  // @extend %page;
 
-  // background: $color-cadet-blue;
-  // color: $color-bright-gray;
+  background: $color-cadet-blue;
+  color: $color-bright-gray;
 
   &--active {
     @extend %page--active;
@@ -41,7 +41,7 @@
 
 .about__footer__credits {
   a {
-    @extend %link--hidden;
+    // @extend %link--hidden;
 
     &:first-child {
       margin-right: 1rem;
